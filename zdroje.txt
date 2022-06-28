@@ -1,0 +1,44 @@
+### Getopt
+### oficial library
+https://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Options.html
+
+### all i know about PCAP so far
+https://www.tcpdump.org/pcap.html
+
+### ARP headers
+https://cs.wikipedia.org/wiki/Address_Resolution_Protocol
+
+### UDP headers
+https://cs.wikipedia.org/wiki/User_Datagram_Protocol
+
+### TCP headers
+https://cs.wikipedia.org/wiki/Transmission_Control_Protocol
+
+### IPv4
+https://cs.wikipedia.org/wiki/IPv4
+
+### IPv6
+https://cs.wikipedia.org/wiki/IPv6
+
+### Zistovanie typu packetu a priklady pozuitia lib_pcap
+https://www.devdungeon.com/content/using-libpcap-c
+
+
+### ARP
+https://unix.superglobalmegacorp.com/NetBSD-0.8/newsrc/netinet/if_ether.h.html
+
+###time
+https://www.programiz.com/cpp-programming/library-function/ctime/gmtime
+
+### IP adresa
+https://cs.wikipedia.org/wiki/IP_adresa
+
+
+### Internet protocol numbers
+https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
+
+### IPV6 spec to printing
+https://datatracker.ietf.org/doc/html/rfc5952
+
+### printing IPV6
+https://man7.org/linux/man-pages/man3/inet_ntop.3.html?fbclid=IwAR092i5b10QlQbid1_wbS1WM97TCUfNNO2MLPB1vrVyZqu4TPGRUU_-7t6w

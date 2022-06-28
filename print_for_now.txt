@@ -1,0 +1,68 @@
+printf("0x0000: ");
+    for (int i = 0; i < header->len; i++){
+
+        if(i % 8 == 0 && i % 16 != 0){
+            printf("  ");
+        }
+        printf("%02x ", packet[i]);
+
+
+        if((i % 16 == 0 && i != 0 && i != 16) || i == 15){
+            if(i != 15){
+            for(int j = i-16; j <= i; j++ ){
+                if(j% 8 == 0){
+                    printf("  ");
+                }
+                if(!isprint((unsigned char)packet[j])){
+                    printf(".");
+                }
+                else{
+                    printf("%c", (unsigned char)packet[j]);
+                }
+            }
+            printf("\n");
+            }
+            if(i == 15){
+            for(int j = i-15; j <= i; j++ ){
+                if(j % 8 == 0){
+                    printf("  ");
+                }
+                if(!isprint((unsigned char)packet[j])){
+                    printf(".");
+                }
+                else{
+                    printf("%c", (unsigned char)packet[j]);
+                }
+            }
+            printf("\n");
+            }
+        }
+        if(i + 1 == header->len){
+            /// part of padding from spaces between every eigthth num
+            printf("    ");
+            for(int k = 0; k < 16 - (i%16) ;k++){
+                //pading for alignment
+                printf("   ");
+            }
+            for(int j = i-(i%15); j <= i; j++ ){
+                if(j% 8 == 0){
+                    printf(" ");
+                }
+                if(!isprint((unsigned char)packet[j])){
+                    printf(".");
+                }
+                else{
+                    printf("%c", (unsigned char)packet[j]);
+                }
+            }
+            printf("\n");
+        }
+        if(i%16 == 0 && i != 0 && i != 16){
+            printf("0x%04x: ", i);
+        }
+        if(i == 15){
+            printf("0x0010: ");
+        }
+        
+    }
+    printf("\n");printf("\n");

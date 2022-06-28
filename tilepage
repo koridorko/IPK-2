@@ -1,0 +1,24 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, top=3cm, text={17cm, 24cm}]{geometry}
+\usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\Huge
+\textsc{Vysoké učení technické v~Brně\\
+\huge{Fakulta informačních technologií\\}}
+\vspace{\stretch{0.382}}
+\LARGE Počítačové komunikace a sítě\,--\,2. projekt \\
+\Huge Citácie
+\vspace{\stretch{0.618}}
+\end{center} 
+{\Large \today \hfill
+Štefan Gajdošík}
+\end{titlepage}
+
+
+\end{document}
